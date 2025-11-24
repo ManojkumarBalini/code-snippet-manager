@@ -15,7 +15,7 @@ app.use(helmet({
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://your-frontend-app.onrender.com' // Replace with your actual frontend URL
+    'https://code-snippet-manager-frontend.onrender.com' // Replace with your actual frontend URL
   ],
   credentials: true
 }));
