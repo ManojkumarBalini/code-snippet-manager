@@ -61,8 +61,8 @@ const Dashboard = () => {
   }
 
   return (
-    // CHANGED: Added px-4 to match header padding
-    <div className="max-w-7xl mx-auto px-4 space-y-8">
+    // FIXED: Removed px-4 since it's now handled by the main container
+    <div className="max-w-7xl mx-auto w-full space-y-8">
       {/* Header */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
         <div>
