@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: code-snippet-manager-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        fromDatabase:
+          name: snippet-manager-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLOUDINARY_CLOUD_NAME
+        value: your-cloudinary-name
+      - key: CLOUDINARY_API_KEY
+        value: your-cloudinary-key
+      - key: CLOUDINARY_API_SECRET
+        value: your-cloudinary-secret
+
+  - type: web
+    name: code-snippet-manager-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://code-snippet-manager-backend.onrender.com/api
