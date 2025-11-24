@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useSnippets } from '../../context/SnippetContext'
-import SnippetForm from '../../components/snippets/SnippetForm/SnippetForm'
+import SnippetForm from '../../components/Snippets/SnippetForm/SnippetForm.jsx'
 import { Code2, ArrowLeft } from 'lucide-react'
 import toast from 'react-hot-toast'
 
