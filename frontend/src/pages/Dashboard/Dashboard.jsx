@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 import StatsCard from '../../components/dashboard/StatsCard/StatsCard'
 import QuickActions from '../../components/dashboard/QuickActions/QuickActions'
-import SnippetCard from '../../components/snippets/SnippetCard/SnippetCard'
+import SnippetCard from '../../components/Snippets/SnippetCard/SnippetCard.jsx'
 
 const Dashboard = () => {
   const { user } = useAuth()
