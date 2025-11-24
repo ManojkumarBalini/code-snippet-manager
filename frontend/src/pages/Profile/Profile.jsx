@@ -12,7 +12,7 @@ import {
   Save,
   X
 } from 'lucide-react'
-import SnippetCard from '../../components/snippets/SnippetCard/SnippetCard'
+import SnippetCard from '../../components/Snippets/SnippetCard/SnippetCard.jsx'
 
 const Profile = () => {
   const { user, updateUser } = useAuth()
