@@ -28,4 +28,4 @@ services:
     staticPublishPath: ./frontend/dist
     envVars:
       - key: VITE_API_URL
-        value: https://code-snippet-manager-backend.onrender.com/api
+        value: https://code-snippet-manager-backend-7v42.onrender.com/api
