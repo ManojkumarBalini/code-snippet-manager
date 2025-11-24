@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSnippets } from '../../context/SnippetContext'
-import SearchBar from '../../components/search/SearchBar/SearchBar'
-import FilterPanel from '../../components/search/FilterPanel/FilterPanel'
-import SnippetCard from '../../components/snippets/SnippetCard/SnippetCard'
+import SearchBar from '../../components/search/SearchBar/SearchBar.jsx'
+import FilterPanel from '../../components/search/FilterPanel/FilterPanel.jsx'
+import SnippetCard from '../../components/Snippets/SnippetCard/SnippetCard.jsx'
 import { Code2, Filter, Grid, List } from 'lucide-react'
 
 const Snippets = () => {
