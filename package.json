@@ -1,0 +1,15 @@
+{
+  "name": "code-snippet-manager",
+  "version": "1.0.0",
+  "description": "Full-stack code snippet manager",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "build:all": "npm run install:all && npm run build"
+  },
+  "keywords": ["code", "snippets", "manager"],
+  "author": "Your Name",
+  "license": "MIT"
+}
