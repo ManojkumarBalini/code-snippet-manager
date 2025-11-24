@@ -1,5 +1,5 @@
 import React from 'react'
-import SnippetForm from '../../components/snippets/SnippetForm';
+import SnippetForm from '../../components/Snippets/SnippetForm/SnippetForm.jsx'
 import { Code2 } from 'lucide-react'
 
 const CreateSnippet = () => {
