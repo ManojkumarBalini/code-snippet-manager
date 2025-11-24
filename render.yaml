@@ -3,23 +3,22 @@ services:
     name: code-snippet-manager-backend
     env: node
     plan: free
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && npm start
+    rootDirectory: backend
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: MONGODB_URI
-        fromDatabase:
-          name: snippet-manager-db
-          property: connectionString
+        value: mongodb+srv://manojkumar:Manoj%408143@cluster0.0xoc1yz.mongodb.net/code_snippet_manager?retryWrites=true&w=majority
       - key: JWT_SECRET
-        generateValue: true
+        value: 288ad2bc3d79d405dee98bcb988cb534bea9d156b9063dace625d2567c3254ddad5556519a0a8d9016a44c83163a4e02a45e1d289477f08701d1afaff624dbdc
       - key: CLOUDINARY_CLOUD_NAME
-        value: your-cloudinary-name
+        value: duhzpjsoo
       - key: CLOUDINARY_API_KEY
-        value: your-cloudinary-key
+        value: 338675644846919
       - key: CLOUDINARY_API_SECRET
-        value: your-cloudinary-secret
+        value: vKFbLCvGc6GxFnxujCmgkOOGHpg
 
   - type: web
     name: code-snippet-manager-frontend
