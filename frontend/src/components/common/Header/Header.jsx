@@ -41,7 +41,8 @@ const Header = () => {
 
   return (
     <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
-      <div className="container mx-auto px-4">
+      {/* CHANGED: Removed container mx-auto and added w-full px-4 */}
+      <div className="w-full px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link 
