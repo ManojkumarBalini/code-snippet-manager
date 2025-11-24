@@ -70,7 +70,8 @@ function App() {
           <Router>
             <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 flex flex-col">
               <Header />
-              <main className="flex-1">
+              {/* FIXED: Added consistent padding to main content area */}
+              <main className="flex-1 w-full px-4 sm:px-6 lg:px-8 py-8">
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/dashboard" element={<Dashboard />} />
