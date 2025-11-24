@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 import StatsCard from '../../components/dashboard/StatsCard/StatsCard'
 import QuickActions from '../../components/dashboard/QuickActions/QuickActions'
-import SnippetCard from '../../components/Snippets/SnippetCard/SnippetCard.jsx'
+import SnippetCard from '../../components/snippets/SnippetCard/SnippetCard'
 
 const Dashboard = () => {
   const { user } = useAuth()
@@ -61,7 +61,8 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto space-y-8">
+    // CHANGED: Added px-4 to match header padding
+    <div className="max-w-7xl mx-auto px-4 space-y-8">
       {/* Header */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
         <div>
