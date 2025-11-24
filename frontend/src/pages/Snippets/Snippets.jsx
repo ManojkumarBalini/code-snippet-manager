@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSnippets } from '../../context/SnippetContext'
 import SearchBar from '../../components/search/SearchBar/SearchBar'
 import FilterPanel from '../../components/search/FilterPanel/FilterPanel'
-import SnippetCard from '../../components/Snippets/SnippetCard/SnippetCard.jsx'
+import SnippetCard from '../../components/snippets/SnippetCard/SnippetCard'
 import { Code2, Filter, Grid, List } from 'lucide-react'
 
 const Snippets = () => {
@@ -48,7 +48,8 @@ const Snippets = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto space-y-6">
+    // CHANGED: Added px-4 to match header padding
+    <div className="max-w-7xl mx-auto px-4 space-y-6">
       {/* Header */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
         <div>
